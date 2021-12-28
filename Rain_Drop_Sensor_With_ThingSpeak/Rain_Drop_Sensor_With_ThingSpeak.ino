@@ -24,7 +24,7 @@ void loop()
 {
   raindrop = analogRead(RainDropSensorpin); 
   Serial.println("Rain Drop Sensor =  "); 
-  Serial.println(raindrop); RAnithu
+  Serial.println(raindrop);
   delay(10);
   ThingSpeak.writeField(myChannelNumber, 1,val, myWriteAPIKey); 
 }
